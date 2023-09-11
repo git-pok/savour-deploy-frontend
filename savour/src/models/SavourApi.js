@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://savour-xlpj.onrender.com";
 class SavourApi {
     constructor (token = null) {
         this.token = token;
