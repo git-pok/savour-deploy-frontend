@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const BASE_URL = "http://0.0.0.0/1000";
+const BASE_URL = "https://savour-api.onrender.com";
 class SavourApi {
     constructor (token = null) {
         this.token = token;
