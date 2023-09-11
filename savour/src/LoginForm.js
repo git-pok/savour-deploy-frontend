@@ -48,7 +48,7 @@ const LoginForm = ({ formValsCheck }) => {
       } catch (err) {
         console.log("ERROR", err);
         // Define variable for API error.
-        const error = err.response.data.error.message;
+        const error = err.response.data.error.message || null;
         const isErrObj = typeof err.message === "object";
         const isErrorObj = typeof error === "object";
         const errMsg = isErrObj ? null : err.message;
