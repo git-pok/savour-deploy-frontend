@@ -15,16 +15,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=3001 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.(js|ts)$": "babel-jest"
-    },
-    "transformIgnorePatterns": []
   },
   "eslintConfig": {
     "extends": [
