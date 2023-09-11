@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="Profile-h1"
+  />
+</DocumentFragment>
+`;

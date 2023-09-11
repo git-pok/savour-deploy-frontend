@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="RegisterForm-bg-img"
+    style="background-image: url(ambient-kitchen.jpg); background-size: cover; background-repeat: no-repeat;"
+  >
+    <h1
+      class="RegisterForm-h1"
+    >
+      Sign Up
+    </h1>
+    <form
+      class="RegisterForm"
+    >
+      <div
+        class="RegisterForm-field"
+      >
+        <label
+          for="username"
+        >
+          Username
+        </label>
+        <input
+          autocomplete="username"
+          id="username"
+          name="username"
+          placeholder="Type a username"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="RegisterForm-field"
+      >
+        <label
+          for="firstName"
+        >
+          First Name
+        </label>
+        <input
+          id="firstName"
+          name="first_name"
+          placeholder="Type a first name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="RegisterForm-field"
+      >
+        <label
+          for="lastName"
+        >
+          Last Name
+        </label>
+        <input
+          id="lastName"
+          name="last_name"
+          placeholder="Type a last name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="RegisterForm-field"
+      >
+        <label
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          placeholder="Type an email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        class="RegisterForm-field"
+      >
+        <label
+          for="phone"
+        >
+          Phone
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          placeholder="Type a phone"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="RegisterForm-field"
+      >
+        <label
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          autocomplete="current-password"
+          id="password"
+          name="password"
+          placeholder="Type a password"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        class="RegisterForm-submit"
+      >
+        <button>
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

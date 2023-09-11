@@ -1,0 +1,149 @@
+.Navbar-mobile-menu {
+    display: none;
+}
+
+.Navbar {
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(78, 42, 42);
+    display: flex;
+    align-items: center;
+}
+
+.Navbar-show, .Navbar-hide {
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(78, 42, 42);
+    display: flex;
+    align-items: center;
+}
+
+/*
+selectors: .Navbar-show a, .Navbar-hide a
+purpose: incase the screen is mobile size
+    and the user hits the nav menu and then
+    increases the screen size without closing the
+    mobile menu.
+*/
+.Navbar a, .Navbar-show a, .Navbar-hide a {
+    height: 28px;
+    line-height: 28px;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: .5s ease-in-out background-color;
+}
+
+.Navbar .active {
+    color: #000000;
+    border: 2px inset rgb(221, 230, 237);
+    background-color: rgb(216, 216, 216);
+}
+
+.Navbar a:hover {
+    background-color: rgb(223, 216, 85);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+  
+.Navbar-left-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 30vw;
+}
+
+.Navbar-left-links span {
+    width: 20vw;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+  
+.Navbar-right-links {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+@media only screen and (max-width: 1268px) and (min-width: 726px) {
+    .Navbar-right-links {
+        display: flex;
+        justify-content: right;
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 725px) and (min-width: 200px) {
+    .Navbar-mobile-menu {
+        display: block;
+        width: 100vw;
+        height: 50px;
+        margin: 0px 0px;
+        background-color: rgb(78, 42, 42);
+    }
+
+    .Navbar-mobile-menu p {
+        display: inline;
+        width: 100%;
+        line-height: 50px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .Navbar {
+        display: none;
+    }
+
+    .Navbar-show {
+        display: block;
+        width: 100vw;
+        height: 100%;
+        background-color: rgb(78, 42, 42);
+    }
+
+    .Navbar-hide {
+        display: none;
+    }
+
+    .Navbar-show a {
+        height: 28px;
+        line-height: 28px;
+        margin: 0px 10px 20px 10px;
+        padding: 0px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        /* border-bottom: 1px solid rgb(255, 255, 255); */
+        transition: .5s ease-in-out background-color;
+    }
+
+    .Navbar-show .active {
+        color: #000000;
+        border: 2px inset rgb(221, 230, 237);
+        background-color: rgb(216, 216, 216);
+    }
+
+    .Navbar-left-links span {
+        display: none;
+    }
+    
+    .Navbar-left-links {
+        flex-direction: column;
+        width: 100vw;
+        margin: 0px auto;
+    }
+      
+    .Navbar-right-links {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .Navbar-right-links a {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+}

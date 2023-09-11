@@ -1,0 +1,25 @@
+.PageNotFound {
+    display: block;
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 120px;
+    background-color: rgb(37, 37, 37);
+}
+
+.PageNotFound-text {
+    display: block;
+    width: 460px;
+    height: 180px;
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+    border: 3px solid rgb(196, 126, 126);
+    padding-top: 49px;
+    background-color: white;
+}
+
+.PageNotFound-text p {
+    display: inline-block;
+    text-align: left;
+    margin: 0px auto 20px auto;
+}

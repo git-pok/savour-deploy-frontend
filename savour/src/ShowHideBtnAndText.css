@@ -1,0 +1,20 @@
+.ShowHideBtnAndText-p {
+    display: block;
+    margin: 5px auto 5px auto;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.ShowHideBtnAndText-button {
+    background-color: rgb(223, 216, 85);
+    color: rgb(0, 0, 0);
+    border: 3px inset rgb(223, 216, 85);
+    transition: .5s ease-in-out background-color;
+}
+
+.ShowHideBtnAndText-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 3px inset rgb(255, 255, 255);
+    transition: .5s ease-in-out background-color;
+}

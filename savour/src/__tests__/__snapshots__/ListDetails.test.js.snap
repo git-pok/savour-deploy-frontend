@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="ListDetails-h1"
+  >
+    null List
+  </h1>
+</DocumentFragment>
+`;

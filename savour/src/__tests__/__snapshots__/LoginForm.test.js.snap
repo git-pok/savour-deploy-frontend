@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="LoginForm-h1"
+  >
+    Login
+  </h1>
+  <form
+    class="LoginForm"
+  >
+    <div
+      class="LoginForm-field"
+    >
+      <label
+        for="username"
+      >
+        Username
+      </label>
+      <input
+        autocomplete="username"
+        id="username"
+        name="username"
+        placeholder="Type a username"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="LoginForm-field"
+    >
+      <label
+        for="password"
+      >
+        Password
+      </label>
+      <input
+        autocomplete="current-password"
+        id="password"
+        name="password"
+        placeholder="Type a password"
+        type="password"
+        value=""
+      />
+    </div>
+    <div
+      class="LoginForm-submit"
+    >
+      <button
+        data-testid="sbmtBtn"
+      >
+        SUBMIT
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

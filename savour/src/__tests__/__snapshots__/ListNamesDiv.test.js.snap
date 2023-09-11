@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="ListNamesDiv-h1"
+  >
+    fvin's Shoppinglists's
+  </h1>
+  <div
+    class="ListNamesDiv"
+  >
+    <div
+      class="ListNamesDiv-div"
+    >
+      <p>
+        No Lists!
+      </p>
+    </div>
+  </div>
+  <h1
+    class="ListNamesDiv-h1"
+  >
+    Create a List
+  </h1>
+  <div
+    class="ListNamesDiv-div"
+  >
+    <form
+      class="AddToListForm-form"
+    >
+      <div
+        class="AddToListForm-form-field"
+      >
+        <label
+          for="shoplistName"
+        >
+          List Name
+        </label>
+        <input
+          id="shoplistName"
+          name="shoplistName"
+          placeholder="Type a list name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="AddToListForm-form-field"
+      >
+        <label
+          for="recipeId"
+        >
+          Recipes
+        </label>
+        <select
+          id="recipeId"
+          name="recipeId"
+        >
+          <option
+            value=""
+          >
+            Select a Recipe
+          </option>
+        </select>
+      </div>
+      <div
+        class="AddToListForm-form-submit"
+      >
+        <div
+          class="AddToListForm-msg-div"
+        />
+        <button>
+          CREATE LIST
+        </button>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

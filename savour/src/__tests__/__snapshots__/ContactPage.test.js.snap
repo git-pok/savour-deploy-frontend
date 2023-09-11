@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="ContactPage-h1"
+  >
+    App Creator and Developer Information
+  </h1>
+  <div
+    class="ContactPage"
+  >
+    <div
+      class="ContactPage-div"
+    >
+      <h2
+        class="ContactPage-subtitle"
+      >
+        Name
+      </h2>
+      <p
+        class="ContactPage-short-text"
+      >
+        Vincent
+      </p>
+      <h2
+        class="ContactPage-subtitle"
+      >
+        Nickname
+      </h2>
+      <p
+        class="ContactPage-short-text"
+      >
+        Fvin
+      </p>
+      <h2
+        class="ContactPage-subtitle"
+      >
+        Email
+      </h2>
+      <p
+        class="ContactPage-short-text"
+      >
+        vincent.impreveduto.work@gmail.com
+      </p>
+      <h2
+        class="ContactPage-subtitle"
+      >
+        Location
+      </h2>
+      <p
+        class="ContactPage-short-text"
+      >
+        Tampa Florida
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

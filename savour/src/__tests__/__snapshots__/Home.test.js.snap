@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="Home-h1"
+  >
+    Welcome to Savour – The recipe app
+  </h1>
+  <div
+    class="Home-p"
+  >
+    <h2
+      class="Home-subtitle"
+    >
+      What is Savour
+    </h2>
+    <p
+      style="color: black; font-size: 23px;"
+    >
+      Savour is a recipe app that is built to
+    give the user access to recipes and tools to support recipes.
+    With savour, a user may search/like/dislike/try/save/share a recipe,
+    create a custom version of a recipe, create a recipelist with
+    recipes for an occasion, create a shoppinglist, and more. Savour
+    has recipes for beginners and experts also.
+    </p>
+  </div>
+  <div
+    class="Home-p"
+  >
+    <h2
+      class="Home-subtitle"
+    >
+      Recipe Categories
+    </h2>
+    <p
+      style="color: black; font-size: 23px;"
+    >
+      lunch, breakfast, sweet treats,
+    dinner, storecupboard, desserts, cheese,
+    fish and seafood, pasta, vegan, kids' baking, meat, chicken,
+    savoury pastries, keto, low calorie, salads, vegan, baking,
+    bread, cakes, quick bakes, biscuits,
+    high protein, free from baking, breakfast, dinner, smoothies,
+    fitness & lifestyle, lunch.
+    </p>
+  </div>
+  <div
+    class="Home-button"
+  >
+    <div
+      class="Button"
+    >
+      <a
+        exact="true"
+        href="/recipes"
+      >
+        <button
+          class="Button-button"
+        >
+          RECIPES
+        </button>
+      </a>
+    </div>
+    <div
+      class="Button"
+    >
+      <a
+        exact="true"
+        href="/contact"
+      >
+        <button
+          class="Button-button"
+        >
+          CONTACT
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="Button"
+  >
+    <a
+      exact="true"
+      href="/home"
+    >
+      <button
+        class="Button-button"
+      >
+        HOME
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;

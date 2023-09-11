@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <form
+    class="CreateListForm-form"
+  >
+    <div
+      class="CreateListForm-form-field"
+    >
+      <label
+        for="shoplistName"
+      >
+        List Name
+      </label>
+      <input
+        id="shoplistName"
+        name="shoplistName"
+        placeholder="Type a list name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="CreateListForm-form-submit"
+    >
+      <div
+        class="CreateListForm-msg-div"
+      />
+      <button>
+        CREATE LIST
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

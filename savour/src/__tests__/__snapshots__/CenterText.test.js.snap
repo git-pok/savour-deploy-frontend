@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <p
+    style="color: black; font-size: 24px;"
+  >
+    Test Text!
+  </p>
+</DocumentFragment>
+`;

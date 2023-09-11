@@ -1,0 +1,29 @@
+.Message-fail {
+  display: block;
+  width: 180px;
+  height: 100%;
+  padding: 0px 0px;
+  margin: 10px auto 10px auto;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 06px;
+  background-color: rgb(254, 165, 165);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.Message-success {
+  display: block;
+  width: 180px;
+  height: 100%;
+  padding: 0px 0px;
+  margin: 10px 0px 10px 0px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 06px;
+  background-color: rgb(165, 254, 174);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* .Message-info {
+
+} */

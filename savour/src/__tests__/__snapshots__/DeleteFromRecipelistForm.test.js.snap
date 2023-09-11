@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot without crashing 1`] = `
+<DocumentFragment>
+  <form
+    class="DeleteFromRecipelistForm-form"
+  >
+    <div
+      class="DeleteFromRecipelistForm-form-field"
+    >
+      <label
+        for="recipeId"
+      >
+        Select a Recipe
+      </label>
+      <select
+        id="recipeId"
+        name="recipeId"
+      >
+        <option
+          value=""
+        >
+          Select a Recipe
+        </option>
+        <option
+          value="12"
+        >
+          Test
+        </option>
+      </select>
+    </div>
+    <div
+      class="DeleteFromRecipelistForm-form-submit"
+    >
+      <div
+        class="DeleteFromRecipelistForm-msg-div"
+      />
+      <button>
+        DELETE
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;
