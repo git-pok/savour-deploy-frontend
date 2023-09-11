@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const BASE_URL = "http://localhost:1000";
+const BASE_URL = "http://0.0.0.0/1000";
 class SavourApi {
     constructor (token = null) {
         this.token = token;
