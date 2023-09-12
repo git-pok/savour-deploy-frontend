@@ -56,7 +56,11 @@ const Recipes = () => {
       <h1 className="Recipes-h1">ALL Recipes</h1>
       <div className="Recipes-div">
         <RecipeFilter setState={setRecipesData} />
-        {recipesData === null && <FontAwesomeIcon icon={faSpinner} />}
+        { recipesData === null &&
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            className="Recipes-spinner-icon" />}
         { recipesData && <RecipeContainer showHide={true} recipeArray={recipesData} /> }
       </div>
     </div>
