@@ -148,13 +148,16 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
             name="recipeId"
             onChange={handleChange}
             value={formData.recipeId}>
-            <option key="select-a-recipe" value="">Select a Recipe</option>
+            {/* <option key="select-a-recipe" value="">Select a Recipe</option> */}
             { recipeData === null &&
+            <option key="loading" value="loading">
               <FontAwesomeIcon
                 icon={faSpinner}
                 spin
                 className="AddToListForm-spinner-icon" />
+            </option>
             }
+            { recipeData && <option key="select-a-recipe" value="">Select a Recipe</option> }
             { recipeData &&
               recipeData.map(recipe => (
                 <option key={`${recipe.id}`} value={`${recipe.id}`}>{recipe.name}</option>
