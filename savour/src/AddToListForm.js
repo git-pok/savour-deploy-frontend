@@ -143,17 +143,18 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
         </div>
         <div className="AddToListForm-form-field">
           <label htmlFor="recipeId">Recipes</label>
-          { recipeData === null &&
+          {/* { recipeData === null &&
             <FontAwesomeIcon
               icon={faSpinner}
               spin
               className="AddToListForm-spinner-icon" />
-          }
+          } */}
           <select
             id="recipeId"
             name="recipeId"
             onChange={handleChange}
             value={formData.recipeId}>
+            { recipeData === null && <option key="loading" value="">Recipes are laoding!</option> }
             {/* <option key="select-a-recipe" value="">Select a Recipe</option> */}
             { recipeData && <option key="select-a-recipe" value="">Select a Recipe</option> }
             { recipeData &&
