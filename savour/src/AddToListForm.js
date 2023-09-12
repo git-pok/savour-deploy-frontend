@@ -4,6 +4,10 @@ import UserContext from './context/UserContext.js';
 import SavourApi from './models/SavourApi.js';
 import useToggleState from './hooks/useToggleState.js';
 import Message from './Message.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+          faSpinner
+        } from '@fortawesome/free-solid-svg-icons'
 import './AddToListForm.css';
 /**
  * AddToListForm
@@ -18,7 +22,6 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
   // Recipe request.
   const recipeOpts = { method: "get", url: `/recipes`, data: {}, params: {}, headers };
   const [ recipeData ] = useAxios(recipeOpts);
-  console.log("RECIPE DATA CREATE SHOP LIST FORM", recipeData);
   // Occasion request.
   const OccOpts = { method: "get", url: `/occasions`, data: {}, params: {}, headers };
   const [ occasionData ] = useAxios(OccOpts);
@@ -145,6 +148,12 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
             onChange={handleChange}
             value={formData.recipeId}>
             <option key="select-a-recipe" value="">Select a Recipe</option>
+            { recipeData === null &&
+              <FontAwesomeIcon
+                icon={faSpinner}
+                spin
+                className="AddToListForm-spinner-icon" />
+            }
             { recipeData &&
               recipeData.map(recipe => (
                 <option key={`${recipe.id}`} value={`${recipe.id}`}>{recipe.name}</option>
