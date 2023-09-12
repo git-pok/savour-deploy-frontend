@@ -33,7 +33,7 @@ const Recipes = () => {
   const topFourChickArr = chickenData !== null ? [{...chickenData[0]}, {...chickenData[1]}, {...chickenData[2]}, {...chickenData[3]}] : null;
   const topFourPastaArr = pastaData !== null ? [{...pastaData[0]}, {...pastaData[1]}, {...pastaData[2]}, {...pastaData[3]}] : null;
   const topFourDessertArr = dessertData !== null ? [{...dessertData[0]}, {...dessertData[1]}, {...dessertData[2]}, {...dessertData[3]}] : null;
-
+  console.log("RECIPES DATA ALL RECIPES", recipesData);
   return (
     <>
     <h1 className="Recipes-h1">Top Chicken Recipes</h1>
