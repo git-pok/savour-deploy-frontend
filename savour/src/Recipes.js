@@ -43,14 +43,32 @@ const Recipes = () => {
     <h1 className="Recipes-h1">Top Chicken Recipes</h1>
     <div className="Recipes">
       <div className="Recipes-div">
+        { topFourChickArr === null &&
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            className="Recipes-spinner-icon" />
+        }
         { topFourChickArr && <RecipeContainer showHide={true} recipeArray={topFourChickArr} /> }
       </div>
       <h1 className="Recipes-h1">Top Pasta Recipes</h1>
       <div className="Recipes-div">
+        { topFourPastaArr === null &&
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            className="Recipes-spinner-icon" />
+        }
         { topFourPastaArr && <RecipeContainer showHide={true} recipeArray={topFourPastaArr} /> }
       </div>
       <h1 className="Recipes-h1">Top Dessert Recipes</h1>
       <div className="Recipes-div">
+        { topFourDessertArr === null &&
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            className="Recipes-spinner-icon" />
+        }
         { topFourDessertArr && <RecipeContainer showHide={true} recipeArray={topFourDessertArr} /> }
       </div>
       <h1 className="Recipes-h1">ALL Recipes</h1>
@@ -60,7 +78,8 @@ const Recipes = () => {
           <FontAwesomeIcon
             icon={faSpinner}
             spin
-            className="Recipes-spinner-icon" />}
+            className="Recipes-spinner-icon" />
+        }
         { recipesData && <RecipeContainer showHide={true} recipeArray={recipesData} /> }
       </div>
     </div>
