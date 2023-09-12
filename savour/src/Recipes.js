@@ -3,6 +3,10 @@ import useAxios from './hooks/useAxios.js';
 import UserContext from './context/UserContext.js';
 import RecipeContainer from './RecipeContainer.js';
 import RecipeFilter from './RecipeFilter.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+          faSpinner
+        } from '@fortawesome/free-solid-svg-icons'
 import './Recipes.css';
 
 /**
@@ -33,7 +37,7 @@ const Recipes = () => {
   const topFourChickArr = chickenData !== null ? [{...chickenData[0]}, {...chickenData[1]}, {...chickenData[2]}, {...chickenData[3]}] : null;
   const topFourPastaArr = pastaData !== null ? [{...pastaData[0]}, {...pastaData[1]}, {...pastaData[2]}, {...pastaData[3]}] : null;
   const topFourDessertArr = dessertData !== null ? [{...dessertData[0]}, {...dessertData[1]}, {...dessertData[2]}, {...dessertData[3]}] : null;
-  console.log("RECIPES DATA ALL RECIPES", recipesData);
+
   return (
     <>
     <h1 className="Recipes-h1">Top Chicken Recipes</h1>
@@ -52,6 +56,7 @@ const Recipes = () => {
       <h1 className="Recipes-h1">ALL Recipes</h1>
       <div className="Recipes-div">
         <RecipeFilter setState={setRecipesData} />
+        {recipesData === null && <FontAwesomeIcon icon={faSpinner} />}
         { recipesData && <RecipeContainer showHide={true} recipeArray={recipesData} /> }
       </div>
     </div>
