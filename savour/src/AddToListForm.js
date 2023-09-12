@@ -4,10 +4,6 @@ import UserContext from './context/UserContext.js';
 import SavourApi from './models/SavourApi.js';
 import useToggleState from './hooks/useToggleState.js';
 import Message from './Message.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-          faSpinner
-        } from '@fortawesome/free-solid-svg-icons'
 import './AddToListForm.css';
 /**
  * AddToListForm
@@ -143,19 +139,12 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
         </div>
         <div className="AddToListForm-form-field">
           <label htmlFor="recipeId">Recipes</label>
-          {/* { recipeData === null &&
-            <FontAwesomeIcon
-              icon={faSpinner}
-              spin
-              className="AddToListForm-spinner-icon" />
-          } */}
           <select
             id="recipeId"
             name="recipeId"
             onChange={handleChange}
             value={formData.recipeId}>
-            { recipeData === null && <option key="loading" value="">Recipes are laoding!</option> }
-            {/* <option key="select-a-recipe" value="">Select a Recipe</option> */}
+            { recipeData === null && <option key="loading" value="">Recipes are laoding, wait a few minutes!</option> }
             { recipeData && <option key="select-a-recipe" value="">Select a Recipe</option> }
             { recipeData &&
               recipeData.map(recipe => (
@@ -202,6 +191,7 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
             name="recipeId"
             onChange={handleChange}
             value={formData.recipeId}>
+            { recipeData === null && <option key="loading" value="">Recipes are laoding, wait a few minutes!</option> }
             { recipeData && recipelistSelectRecipe === false ?
               <option key="recipeId" value="">Select a Recipe</option>
             :
