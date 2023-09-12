@@ -22,6 +22,7 @@ const AddToListForm = ({recipelist=false, setState=false, setToggleState=false, 
   // Recipe request.
   const recipeOpts = { method: "get", url: `/recipes`, data: {}, params: {}, headers };
   const [ recipeData ] = useAxios(recipeOpts);
+  console.log("RECIPE DATA LIST FORM", recipeData);
   // Occasion request.
   const OccOpts = { method: "get", url: `/occasions`, data: {}, params: {}, headers };
   const [ occasionData ] = useAxios(OccOpts);
